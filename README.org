@@ -38,7 +38,7 @@
 - app:level_change_delayed    view刷新时间延迟  
 - app:level_change_step       展开或收缩频率，为负数表示收缩 
 
-演示:
-[[https://github.com/ttt307307/AndCustom/blob/master/samples/image-folder/imageviewprogressivelydemo.gif][ImageView伸缩演示]
+#+ATIR_HTML: title="ImageView伸缩演示"
+[[https://github.com/ttt307307/AndCustom/blob/master/samples/image-folder/imageviewprogressivelydemo.gif][file:https://github.com/ttt307307/AndCustom/blob/master/samples/image-folder/imageviewprogressivelydemo.gif]]
 
 * TODO
