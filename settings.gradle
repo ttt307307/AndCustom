@@ -1,1 +1,1 @@
-include ':andcustom', ':listableviewdemo'
+include ':andcustom', ':listableviewdemo', ':imageviewprogressivelydemo'

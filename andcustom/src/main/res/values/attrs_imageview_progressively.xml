@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageViewProgressively">
+        <!-- 展开方向,多个用'|'分割-->
+        <attr name="orientation_progress" format="integer">
+        	<flag name="horizontal_ivp" value="1" />
+        	<flag name="vertical_ivp" value="2"/>
+        </attr>
+        <!-- 展开方式，从上到下，重中间向两边等等,多个用'|'分割,通过设置ClipDrawable对象在容器中的位置 参考ClipDrawable的android:gravity-->
+        <attr name="expend_type" format="integer">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_vertical" value="0x10"/>
+            <flag name="fill_vertical" value="0x70"/>
+            <flag name="center_horizontal" value="0x01"/>
+            <flag name="fill_horizontal" value="0x07"/>
+            <flag name="center" value="0x11"/>
+            <flag name="fill" value="0x77"/>
+            <flag name="clip_vertical" value="0x80"/>
+            <flag name="clip_horizontal" value="0x08"/>
+        </attr>
+        <!-- 递增或递减的幅度（level的范围在0-10000），可以为负数-->
+        <attr name="level_change_step" format="integer"></attr>
+        <!-- 为了使动画效果明显，设置延迟修改的时间间隔 -->
+       	<attr name="level_change_delayed" format="integer"></attr>
+    </declare-styleable>
+</resources>

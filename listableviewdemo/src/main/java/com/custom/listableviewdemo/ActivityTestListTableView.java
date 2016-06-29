@@ -11,7 +11,7 @@ import com.custom.listableviewdemo.entity.AlertDefine;
 import com.custom.listableviewdemo.entity.IRule;
 import com.custom.pagerIndicator.ButtonPageIndicator;
 import com.custom.pagerIndicator.CurrentPageIndexChangeListener;
-import com.custom.view.ListTableAdapter;
+import com.custom.adapter.ListTableAdapter;
 import com.custom.view.ListTableView;
 import com.custom.view.cell.MethodNameValueFactory;
 import com.custom.view.cell.PropertyValueFactory;

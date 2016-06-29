@@ -3,6 +3,7 @@
 #追踪目录/文件
 !/andcustom
 !/listableviewdemo
+!imageviewprogressivelydemo
 !/*.gitignore
 !build.gradle
 !settings.gradle
