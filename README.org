@@ -1,0 +1,43 @@
+#+TITLE:README
+
+* 目录说明
++ andcustom                     一些自定义view、工具类等
++ samples                       放置一些sample图片等
++ imageviewprogressivelydemo    可伸缩ImageView例子
++ listableviewdemo              表格例子
+
+
+* 用法
+** 伸缩ImageView
+参考工程imageviewprogressivelydemo
+#+BEGIN_SRC xml
+<com.custom.view.ImageViewProgressively 
+        android:layout_weight="1"  
+        android:id="@+id/imp_1"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:src="@drawable/test"  
+        app:expend_type="top"  
+        app:orientation_progress="vertical_ivp"  
+        app:level_change_delayed="50"  
+        app:level_change_step="500" />  
+<com.custom.view.ImageViewProgressively  
+        android:id="@+id/imp_2"  
+        android:layout_weight="1"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:src="@drawable/test"  
+        app:expend_type="center_horizontal"  
+        app:orientation_progress="horizontal_ivp"  
+        app:level_change_delayed="50"  
+        app:level_change_step="-500" />
+#+END_SRC
+属性解释：  
+app:expend_type             展开方式，需要和app:orientation_progress， app:level_change_ste结合使用，例"top"表示从上逐渐展开到下。
+app:orientation_progress    展开或收缩方向  
+app:level_change_delayed    view刷新时间延迟  
+app:level_change_step       展开或收缩频率，为负数表示收缩 
+演示:
+[[https://github.com/ttt307307/AndCustom/raw/master/samples/image-folder/imageviewprogressivelydemo.gif][ImageView伸缩演示]]
+
+* TODO

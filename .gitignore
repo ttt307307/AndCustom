@@ -2,8 +2,9 @@
 /*
 #追踪目录/文件
 !/andcustom
+!/samples
 !/listableviewdemo
-!imageviewprogressivelydemo
+!/imageviewprogressivelydemo
 !/*.gitignore
 !build.gradle
 !settings.gradle
