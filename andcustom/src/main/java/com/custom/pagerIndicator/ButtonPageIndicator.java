@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.custom.andcustom.R;
@@ -58,7 +59,7 @@ public class ButtonPageIndicator extends BasePageIndicator {
 
     private void initView() {
         LayoutInflater mInflater = LayoutInflater.from(mContext);
-        LinearLayout layout = (LinearLayout) mInflater.inflate(R.layout.pageindicator_button, null);
+        RelativeLayout layout = (RelativeLayout) mInflater.inflate(R.layout.pageindicator_button, null);
         first = (Button) layout.findViewById(R.id.first);
         previous = (Button) layout.findViewById(R.id.previous);
         next = (Button) layout.findViewById(R.id.next);

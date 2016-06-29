@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal">
+    android:layout_height="wrap_content">
     <Button
         android:id="@+id/first"
         android:layout_width="wrap_content"
@@ -13,22 +12,28 @@
         android:id="@+id/previous"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/first"
         android:text="@string/previous_page"/>
     <Button
         android:id="@+id/next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/previous"
         android:text="@string/next_page"/>
     <Button
         android:id="@+id/last"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/next"
         android:text="@string/last_page"/>
     <EditText
         android:id="@+id/target_page"
         style="@style/tableHeaderText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/last"
+        android:layout_alignTop="@id/last"
+        android:layout_alignBottom="@id/last"
         android:numeric="integer"
         android:text="@string/default_page"/>
     <TextView
@@ -36,10 +41,14 @@
         style="@style/tableHeaderText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/target_page"
+        android:layout_alignTop="@id/last"
+        android:layout_alignBottom="@id/last"
         android:text="/..."/>
     <Button
         android:id="@+id/change"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/total"
         android:text="@string/change"/>
-</LinearLayout>
+</RelativeLayout>
