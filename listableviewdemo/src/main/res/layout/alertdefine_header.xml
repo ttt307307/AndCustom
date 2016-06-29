@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/tableHeaderRow">
+    <TextView style="@style/tableHeaderText" android:text="@string/header_id"  />
+    <TextView style="@style/tableHeaderText" android:text="@string/header_title"  />
+    <TextView style="@style/tableHeaderText" android:text="@string/header_category"  />
+    <TextView style="@style/tableHeaderText" android:text="@string/header_level" />
+    <TextView style="@style/tableHeaderText" android:text="@string/header_description"  />
+    <TextView style="@style/tableHeaderText" android:text="@string/header_rule"  />
+    <TextView style="@style/tableHeaderText" android:text="@string/header_enable"  />
+</TableRow>

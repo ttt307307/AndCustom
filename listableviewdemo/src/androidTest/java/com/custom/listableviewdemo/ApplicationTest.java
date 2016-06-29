@@ -1,4 +1,4 @@
-package com.custom.andcustom;
+package com.custom.listableviewdemo;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
