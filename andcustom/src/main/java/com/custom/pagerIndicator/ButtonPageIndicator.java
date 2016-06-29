@@ -37,10 +37,7 @@ public class ButtonPageIndicator extends BasePageIndicator {
     public ButtonPageIndicator(Context context, AttributeSet attrs) {
         super(context, attrs);
         mContext = context;
-        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-        lp.gravity = Gravity.CENTER_HORIZONTAL;
-        this.setLayoutParams(lp);
-        this.setOrientation(HORIZONTAL);
+        this.setOrientation(VERTICAL);
         initView();
     }
 
@@ -109,7 +106,9 @@ public class ButtonPageIndicator extends BasePageIndicator {
                 setCurrentPageIndex(target);
             }
         });
-        this.addView(layout);
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+        lp.gravity = Gravity.CENTER_HORIZONTAL;
+        this.addView(layout, lp);
     }
 
     private void changeCurrent(int pageIndex) {

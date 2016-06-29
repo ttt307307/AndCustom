@@ -4,6 +4,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
+import com.custom.pagerIndicator.listener.CurrentPageIndexChangeListener;
+
 /**
  * Created by tandewei on 2016/6/28.
  */

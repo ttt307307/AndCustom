@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.custom.listableviewdemo.entity.AlertDefine;
 import com.custom.listableviewdemo.entity.IRule;
 import com.custom.pagerIndicator.ButtonPageIndicator;
-import com.custom.pagerIndicator.CurrentPageIndexChangeListener;
+import com.custom.pagerIndicator.listener.CurrentPageIndexChangeListener;
 import com.custom.adapter.ListTableAdapter;
 import com.custom.view.ListTableView;
 import com.custom.view.cell.MethodNameValueFactory;

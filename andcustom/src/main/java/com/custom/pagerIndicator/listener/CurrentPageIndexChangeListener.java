@@ -1,4 +1,4 @@
-package com.custom.pagerIndicator;
+package com.custom.pagerIndicator.listener;
 
 /**
  * Created by tandewei on 2016/6/28.
