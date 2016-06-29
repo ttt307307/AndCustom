@@ -32,12 +32,13 @@
         app:level_change_delayed="50"  
         app:level_change_step="-500" />
 #+END_SRC
-属性解释：  
-app:expend_type             展开方式，需要和app:orientation_progress， app:level_change_ste结合使用，例"top"表示从上逐渐展开到下。
-app:orientation_progress    展开或收缩方向  
-app:level_change_delayed    view刷新时间延迟  
-app:level_change_step       展开或收缩频率，为负数表示收缩 
+属性解释： 
+- app:expend_type             展开方式，需要和app:orientation_progress， app:level_change_ste结合使用，例"top"表示从上逐渐展开到下。
+- app:orientation_progress    展开或收缩方向  
+- app:level_change_delayed    view刷新时间延迟  
+- app:level_change_step       展开或收缩频率，为负数表示收缩 
+
 演示:
-[[https://github.com/ttt307307/AndCustom/raw/master/samples/image-folder/imageviewprogressivelydemo.gif][ImageView伸缩演示]]
+[[https://github.com/ttt307307/AndCustom/blob/master/samples/image-folder/imageviewprogressivelydemo.gif][ImageView伸缩演示]
 
 * TODO
